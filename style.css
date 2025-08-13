@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6f5;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#birthday-container {
+    z-index: 2;
+}
+
+#birthday-container h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #ff4d94;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#birthday-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#reveal-message {
+    background-color: #ff4d94;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+#reveal-message:hover {
+    background-color: #ff80b3;
+}
+
+#surprise p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff80b3;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    #birthday-container h1 {
+        font-size: 3rem;
+    }
+
+    #birthday-container p, #reveal-message {
+        font-size: 1rem;
+    }
+}
